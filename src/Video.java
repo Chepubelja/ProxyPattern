@@ -1,3 +1,3 @@
-interface Image {
+interface Video {
     void display();
 }

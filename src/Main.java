@@ -1,13 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        Image image = new ProxyImage("test.jpg");
+        Video video = new ProxyVideo("test_video.mp4");
 
-        //image will be loaded from disk
-        image.display();
+        //video will be loaded from disk
+        video.display();
         System.out.println("--------------------------");
 
-        //after 1 time image will not be loaded from disk
-        image.display();
+        //after 1 time video will not be loaded from disk
+        video.display();
     }
 }

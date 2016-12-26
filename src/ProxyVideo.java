@@ -1,16 +1,16 @@
-class ProxyImage implements Image{
+class ProxyVideo implements Video {
 
-    private RealImage realImage;
+    private RealVideo realImage;
     private String fileName;
 
-    ProxyImage(String fileName){
+    ProxyVideo(String fileName){
         this.fileName = fileName;
     }
 
     @Override
     public void display() {
         if(realImage == null){
-            realImage = new RealImage(fileName);
+            realImage = new RealVideo(fileName);
         }
         realImage.display();
     }

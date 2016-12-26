@@ -1,10 +1,10 @@
-class RealImage implements Image {
+class RealVideo implements Video {
 
     private String fileName;
 
-    RealImage(String fileName){
+    RealVideo(String fileName){
         this.fileName = fileName;
-        loadFromDisk(fileName);
+        loadingFromDisk(fileName);
     }
 
     @Override
@@ -12,7 +12,7 @@ class RealImage implements Image {
         System.out.println(fileName + " is displaying now ");
     }
 
-    private void loadFromDisk(String fileName){
+    private void loadingFromDisk(String fileName){
         System.out.println(fileName + " is loading now");
     }
 }
